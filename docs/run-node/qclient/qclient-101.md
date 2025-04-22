@@ -1,50 +1,24 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
-# How to use the qclient
+# QClient 101
 
 The qclient is an application that allows you to manage QUIL tokens through various operations (send/receive, split/merge, accept/reject).
 
-## Installing the client
-
-### Install the qclient Binary
-
-1. Check the latest release [here](https://releases.quilibrium.com/qclient-release).
-2. Download and install the binary, the digest and the signatures according to your os and architecture from:  
-   ```
-   https://releases.quilibrium.com/<filename>
-   ```
-
-### First-Time Setup
-
-- When you run a qclient command for the first time, it will automatically generate a `.config` folder containing your keys.
-- If you already have existing keys, you need to manually create a `.config` folder with your keys in the same directory as the qclient binary.
-- If your `.config` folder is located elsewhere, you can use the `--config path-to-config` flag in the qclient commands to specify its location.
-- To use the public RPC you can also add the flag `--public-rpc`
 
 ### How to run the qclient commands
 
 To run the qclient commands, you need to execute your qclient binary, followed by the command and optional flags.
 
 
+## Example
 Here is an example of a command:
 
 ```bash
-./qclient-version-os-arch command --config /path/to/config --public-rpc
+qclient command --config /path/to/config --public-rpc
 ```
 
-This translates to the following for v2.0.1 on Linux:
-
-```bash
-./qclient-2.0.1-linux-amd64 token balance --config $HOME/ceremonyclient/node/.config --public-rpc
-```
-
-:::tip
-
-Every time you see `qclient` in the commands below, it actually refers to something like `./qclient-version-os-arch`
-
-:::
 
 ## Qclient Commands
 
