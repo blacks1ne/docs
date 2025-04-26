@@ -2,10 +2,17 @@
 sidebar_position: 1
 ---
 # Install the Node Binary
-You can install the node binary manually, but this page is dedicated to how to install via qclient.
+You can install the node binary manually without qclient, but this page is dedicated to how to install via qclient.
+
+## Benefits of Using QClient to Manage Node
+The goal of integrating Node management into QClient is multiple-fold:
+  - A standardized set of directories for singular and multiple configs (keysets) and node versions
+  - Ease of setup
+  - Batteries-included features like binary linking, manual and auto-update, a system service, and system logging can be made standardized patterns regarding the above.
+  - Node diagnostics, config changes, and integrated token operations with node configs
 
 ## Command
-This will install the latest version available.
+Assuming your qclient has been linked (`qclient link` manually or as part of the initial qclient install via scripted [setup](/docs/run-node/qclient/setup#scripted-installation)), this will install the latest version available.
 :::note
 This requires sudo, as it will install binaries to `/var/quilibrium/bin/node/<version>/`, install a service, setup log-rotate, and a create symlink.
 :::

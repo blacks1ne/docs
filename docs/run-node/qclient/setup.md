@@ -40,7 +40,7 @@ Subsequent installs/updates can be done with:
 - If your `.config` folder is located elsewhere, you can use the `--config path-to-config` flag in the qclient commands to specify its location.
 - To use the public RPC you can also add the flag `--public-rpc`
 
-:::notice
+:::info
 Pre-2.1 the default config would be created in the .config directory located where you ran the command, currently configs have been moved to be in the `~/.quilibrium/configs` directory.
 
 Qclient is aiming to deliver a toolset to be able use existing installations where an .config folder already exists, but it is recommended to import to the new structure for maximum compatibility and future improvements. See [Managing Configs](./managing-configs) on how to import.
@@ -63,9 +63,9 @@ If you choose to not download signatures, you compiled from source, or are doing
 Use the `--signature-check=false` or `-y` flag to indicate you don't wish to check signatures.
 
 #### Persistant Setting
-Run `qclient config signature-check false`.  This will bypass any future signature checks on this client.
+Run `qclient config signature-check disable`.  This will bypass any future signature checks on this client.
 
-To unset, run `qclient config signature-check true`. Running future qclient commands will then require signature checks.
+To unset, run `qclient config signature-check enable`. Running future qclient commands will then require signature checks.
 
 ### Using a Light Node
 A light node is where you choose to use a public or custom RPC.

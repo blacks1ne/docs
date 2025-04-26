@@ -1,5 +1,5 @@
 # Auto-Updating
-QClient has a built in command to set an auto-update task for you.
+QClient has a built in command to create an auto-update scheduled task.
 
 :::info
 By default, the installed cron task will check every 10 minutes.

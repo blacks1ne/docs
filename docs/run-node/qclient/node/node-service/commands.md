@@ -13,7 +13,6 @@ This will detect which operating system and use the relevant commands.
 :::
 
 
-
 ## Commands
 To start the node:
 ### Start

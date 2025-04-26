@@ -24,4 +24,4 @@ The location for keys is in the user's home directory, in `$HOME/.quilibrium/con
 ```
 
 ## Configuring Keys for Node to Use
-See [Multiple Keysets](multiple-keysets) on how to import and select which key for your node to use while running.
+See [Import Keysets](import-keysets) on how to import and select which key for your node to use while running.
